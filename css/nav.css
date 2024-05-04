@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Imprima&family=Nova+Round&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Yatra+One&display=swap");
+
+:root {
+  --primaryBlue: #27255e;
+  --secondaryBlue: #3a3789;
+  --tertiaryBlue: #4a46b3;
+  --lightBlue: #908cff;
+  --lighterBlue: #b2afff;
+  --textBlue: #cfceff;
+}
+
+header {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuitem {
+  list-style-type: none;
+  padding-top: 1.25rem;
+  display: flex;
+  column-gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuitem li a {
+  text-decoration: none;
+  color: var(--primaryBlue);
+  font-size: 16px;
+  font-family: Quicksand;
+  font-weight: 600;
+}
+
+.signupbtn {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--primaryBlue);
+  color: var(--textBlue);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.ham,
+.menuitem_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu,
+  .signupbtn {
+    display: none;
+  }
+
+  .ham,
+  .menuitem_mobile {
+    display: block;
+  }
+
+  .ham {
+    background: none;
+    border: none;
+    float: right;
+    cursor: pointer;
+    color: var(--primaryBlue);
+  }
+
+  .close {
+    background: none;
+    border: none;
+    float: right;
+    margin: 2em;
+    cursor: pointer;
+    color: var(--lightBlue);
+  }
+
+  button svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .menu_mobile {
+    width: 50%;
+    left: auto;
+    bottom: auto;
+    background: var(--primaryBlue);
+    border: none;
+    height: 100vh;
+    translate: 100% 0;
+    transition: translate 0.5s, display 0.5s ease-out allow-discrete;
+
+    &:popover-open {
+      translate: 0 0;
+
+      @starting-style {
+        translate: 100% 0;
+      }
+    }
+  }
+
+  .menuitem_mobile {
+    list-style-type: none;
+    margin-top: 7rem;
+    margin-left: 2rem;
+  }
+
+  .menuitem_mobile li {
+    padding: 0.5em 0;
+  }
+
+  .menuitem_mobile li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  .signup_mobile {
+    padding-left: 3rem;
+  }
+
+  .signupbtn_mobile {
+    padding: 0.7rem 1.5rem;
+    background-color: var(--textBlue);
+    color: var(--primaryBlue);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 1rem;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu_mobile {
+    width:75%;
+  }
+
+  .close {
+    margin-top: 1.5rem;
+  }
+}
