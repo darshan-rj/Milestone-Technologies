@@ -144,10 +144,12 @@ header {
 
 @media screen and (max-width: 600px) {
   .menu_mobile {
-    width:75%;
+    width:100%;
   }
 
   .close {
     margin-top: 1.5rem;
   }
 }
+
+
