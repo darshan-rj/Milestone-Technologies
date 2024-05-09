@@ -1,105 +1,456 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Imprima&family=Nova+Round&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Yatra+One&display=swap");
 
-
-:root{
-    --bgprimary: #27255E;
-    --bgsecondary: #746FFF;
-    --lightpurple: #CBC9FC;
+:root {
+  --bgprimary: #27255e;
+  --bgsecondary: #746fff;
+  --darkpurple: #3c3994;
+  --lightpurple: #cbc9fc;
 }
 
 @font-face {
-    font-family: Panchangbold;
-    src: url('../assets/fonts/Panchang-Bold.otf');
-  }
-  @font-face {
-    font-family: Panchangreg;
-    src: url('../assets/fonts/Panchang-Regular.otf');
-  }
-
-  @font-face {
-    font-family: technorsemi;
-    src: url('../assets/fonts/Technor-Semibold.otf');
-  }
-  @font-face {
-    font-family: supremereg;
-    src: url('../assets/fonts/Supreme-Regular.otf');
-  }
-
-.hero {
-    width: 100%;
-    height: 500px;
-    margin-top: 2rem;
-    padding: 2rem 5rem;
-    background: var(--bgprimary);
-    border: 2px solid var(--bgsecondary);
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 5px rgba(116, 111, 255, 0.46);
+  font-family: Panchangbold;
+  src: url("../assets/fonts/Panchang-Bold.otf");
 }
-
+@font-face {
+  font-family: Panchangreg;
+  src: url("../assets/fonts/Panchang-Regular.otf");
+}
+@font-face {
+  font-family: technorsemi;
+  src: url("../assets/fonts/Technor-Semibold.otf");
+}
+@font-face {
+  font-family: supremereg;
+  src: url("../assets/fonts/Supreme-Regular.otf");
+}
+@font-face {
+  font-family: satoshibold;
+  src: url("../assets/fonts/Satoshi-Bold.otf");
+}
+@font-face {
+  font-family: satoshireg;
+  src: url("../assets/fonts/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: khandbold;
+  src: url("../assets/fonts/Khand-Bold.otf");
+}
+@font-face {
+  font-family: hindreg;
+  src: url("../assets/fonts/Hind-Regular.otf");
+}
+@font-face {
+  font-family: switzerreg;
+  src: url("../assets/fonts/Switzer-Regular.otf");
+}
+.hero {
+  display: grid;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  padding: 2rem 5rem;
+  background: var(--bgprimary);
+  border: 2px solid var(--bgsecondary);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 5px rgba(116, 111, 255, 0.46);
+  justify-content: center;
+}
 
 .custom-pattern {
-    height: 100%;
-	background:
-		  radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#746FFF 68% 70%,#0000 72%) 100px 100px/calc(2*100px) calc(2*100px),
-		  radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#746FFF 68% 70%,#0000 72%) 100px 100px/calc(2*100px) calc(2*100px),
-		  radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#746FFF 68% 70%,#0000 72%) 0 0/calc(2*100px) calc(2*100px),
-		  radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#746FFF 68% 70%,#0000 72%) 0 0/calc(2*100px) calc(2*100px),
-		  repeating-conic-gradient(#27255E 0 25%,#0000 0 50%) 0 0/calc(2*100px) calc(2*100px),
-		  radial-gradient(#0000 66%,#746FFF 68% 70%,#0000 72%) 0 calc(100px/2)/100px 100px
-		  #27255E;
-    opacity: 0.3
+  height: 100%;
+  background: radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #746fff 68% 70%,
+        #0000 72%
+      )
+      100px 100px / calc(2 * 100px) calc(2 * 100px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #746fff 68% 70%,
+        #0000 72%
+      )
+      100px 100px / calc(2 * 100px) calc(2 * 100px),
+    radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #746fff 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 100px) calc(2 * 100px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #746fff 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 100px) calc(2 * 100px),
+    repeating-conic-gradient(#27255e 0 25%, #0000 0 50%) 0 0 / calc(2 * 100px)
+      calc(2 * 100px),
+    radial-gradient(#0000 66%, #746fff 68% 70%, #0000 72%) 0 calc(100px / 2) /
+      100px 100px #27255e;
+  opacity: 0.3;
 }
 
-.hero-title{
-    padding-left: 2rem;
-    padding-top: 2rem;
-    text-align: center;
-    font-family: technorsemi;
-    font-size: 46px;
-    color: var(--lightpurple);
+.hero-title {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  font-family: technorsemi;
+  font-size: 46px;
+  color: var(--lightpurple);
 }
 
-.hero-para{
-    text-align: center;
-    font-family: supremereg;
-    color: var(--lightpurple);
-    font-size: 16px;
-    padding:2rem;
+.hero-para {
+  text-align: center;
+  font-family: supremereg;
+  color: var(--lightpurple);
+  font-size: 16px;
+  padding: 2rem;
 }
 
 .hero-img {
-    z-index: 1;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  justify-self: center;
 }
 
-.cta{
-    text-align: center;
+.cta {
+  text-align: center;
 }
 
-.exploreBtn{
-    text-decoration: none;
-    padding: 1rem 2rem;
-    background-color: var(--lightpurple);
-    border-radius: 15px;
-    font-family: Panchangbold;
-    color: var(--bgprimary);
-
+.exploreBtn {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--lightpurple);
+  border-radius: 15px;
+  font-family: technorsemi;
+  font-size: 18px;
+  color: var(--bgprimary);
 }
 
-.about{
-    margin-top: 2rem;
-    padding: 2rem 5rem;
-    height: 600px;
+.about,
+.services,
+.experience {
+  margin-top: 5rem;
+  padding: 2rem;
+  /* height: 400px; */
 }
 
-.section-title span{
-    font-family: Panchangbold;
-    color: var(--bgprimary);
-    font-size: 32px;
+.section-title span {
+  font-family: Panchangbold;
+  color: var(--bgprimary);
+  font-size: 32px;
 }
 
 .section-title {
-    font-family: Panchangbold;
-    color: var(--bgprimary);
-    font-size: 18px;
+  font-family: Panchangbold;
+  color: var(--bgprimary);
+  font-size: 18px;
 }
 
+.abt-content {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: justify;
+  font-size: 18px;
+  font-family: supremereg;
+  color: var(--bgprimary);
+}
+
+.abt-redir {
+  margin-top: 3rem;
+}
+
+.learnbtn {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--bgprimary);
+  border-radius: 18px;
+  border: 2px solid var(--bgsecondary);
+  font-family: technorsemi;
+  font-size: 18px;
+  color: var(--lightpurple);
+}
+
+.learnbtn:hover {
+  background-color: var(--bgsecondary);
+  border: 2px solid var(--bgprimary);
+  color: var(--bgprimary);
+}
+
+.ser-content {
+  padding: 2rem 1rem;
+}
+
+/* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
+
+.accordion {
+  width: 100%;
+  /* width: 100%; */
+  margin: 2rem auto;
+  color: var(--bgprimary);
+  background-color: transparent;
+  padding: 2rem 2rem;
+}
+
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 24px;
+  color: var(--bgprimary);
+  cursor: pointer;
+  font-family: technorsemi;
+}
+
+/* Positions the plus sign 5px from the right. Centers it using the transform property. */
+
+.accordion .label::before {
+  content: "+";
+  color: var(--bgprimary);
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.accordion .content {
+  position: relative;
+  /* background: var(--bgsecondary); */
+  height: 0;
+  font-size: 18px;
+  text-align: justify;
+  width: 500px;
+  overflow: hidden;
+  transition: 0.5s;
+  /* color: var(--bgprimary) */
+  font-family: supremereg;
+}
+
+/* Adds a horizontal line between the contents */
+
+.accordion hr {
+  width: 100%;
+  margin-left: 0;
+  border: 1px solid var(--bgprimary);
+}
+
+/* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+  padding: 1rem;
+  height: auto;
+}
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container.active .label::before {
+  content: "-";
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 2rem;
+}
+
+.accordion .container.active .label {
+  background-color: var(--lightpurple);
+  border-radius: 0.25rem;
+  text-align: center;
+  transition: 0.75s linear;
+}
+
+.serviceimgcontainer {
+  display: grid;
+  margin-left: 8rem;
+}
+
+.service-img1 {
+  width: 250px;
+  height: auto;
+  justify-self: flex-start;
+}
+.service-img2 {
+  width: 280px;
+  height: auto;
+  justify-self: flex-end;
+}
+.service-img3 {
+  width: 220px;
+  height: auto;
+  justify-self: flex-start;
+}
+
+.card {
+  /* display: flex !important;
+    flex-direction: row !important; */
+  margin-top: 3rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100% !important;
+  height: auto;
+  border: none !important;
+  border-radius: 2rem !important;
+}
+
+.card-img {
+  width: 300px !important;
+  height: auto;
+  border-radius: 1rem !important;
+}
+
+.card .card-body {
+  padding-left: 2rem;
+}
+.card .card-body .card-title {
+  font-family: khandbold;
+  font-size: 32px;
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--bgprimary),
+    var(--bgsecondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtitle {
+  font-family: hindreg;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--darkpurple);
+  font-style: italic;
+}
+.text li {
+  font-family: switzerreg;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--darkpurple);
+}
+
+.courses {
+  height: auto;
+  background-color: var(--bgprimary);
+  border: 2px solid var(--bgsecondary);
+  border-radius: 15px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.cousec-title span {
+  font-family: Panchangbold;
+  color: var(--lightpurple);
+  font-size: 32px;
+}
+
+.cousec-title {
+  font-family: Panchangbold;
+  color: var(--lightpurple);
+  font-size: 18px;
+  padding: 2rem 2rem !important;
+}
+
+.ccard1 {
+  padding: 1rem;
+  width: 600px !important;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card-img {
+  width: 250px;
+  height: 250px;
+}
+
+.ccard-body {
+  padding: 1rem;
+}
+
+.ccard-body .ccard-title {
+  font-family: technorsemi;
+  color: var(--lightpurple);
+}
+
+.csubtitle {
+  font-family: hindreg;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--bgsecondary);
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+.lmbtn {
+  text-decoration: none;
+  padding-left: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--lightpurple);
+  color: var(--darkpurple);
+  font-family: khandbold;
+  border-radius: 1rem;
+}
+
+.viewall {
+  font-family: Panchangbold;
+  font-size: 18px;
+  color: var(--lightpurple);
+}
+
+.icontainer {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 0fr 1fr 1fr;
+  gap: 15px 9px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+@media screen and (max-width: 600px) {
+  .accordion {
+    padding: 0;
+  }
+  .accordion .content {
+    width: 100%;
+  }
+  .serviceimgcontainer {
+    display: none !important;
+  }
+  .card,
+  .card-body {
+    padding: 0;
+    padding-left: 0;
+  }
+  .ser-content {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .ccard1 {
+    margin: 1rem 0;
+    width: 300px !important;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+  }
+}
