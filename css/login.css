@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Imprima&family=Nova+Round&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Yatra+One&display=swap");
+
+:root {
+  --bgprimary: #27255e;
+  --bgsecondary: #746fff;
+  --darkpurple: #3c3994;
+  --lightpurple: #cbc9fc;
+}
+
+@font-face {
+  font-family: Panchangbold;
+  src: url("../assets/fonts/Panchang-Bold.otf");
+}
+@font-face {
+  font-family: Panchangreg;
+  src: url("../assets/fonts/Panchang-Regular.otf");
+}
+@font-face {
+  font-family: technorsemi;
+  src: url("../assets/fonts/Technor-Semibold.otf");
+}
+@font-face {
+  font-family: supremereg;
+  src: url("../assets/fonts/Supreme-Regular.otf");
+}
+@font-face {
+  font-family: satoshibold;
+  src: url("../assets/fonts/Satoshi-Bold.otf");
+}
+@font-face {
+  font-family: satoshireg;
+  src: url("../assets/fonts/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: khandbold;
+  src: url("../assets/fonts/Khand-Bold.otf");
+}
+@font-face {
+  font-family: hindreg;
+  src: url("../assets/fonts/Hind-Regular.otf");
+}
+@font-face {
+  font-family: switzerreg;
+  src: url("../assets/fonts/Switzer-Regular.otf");
+}
+@font-face {
+  font-family: interbold;
+  src: url("../assets/fonts/Inter-Bold.ttf");
+}
+
+.logscr{
+  /* margin-top: 2rem; */
+}
+
+.logscr .regimg {
+  width: 100%;
+  height: auto;
+  border-radius:1rem;
+}
+
+.section-title {
+  margin: 2rem 2rem;
+  text-align: center;
+  font-family: technorsemi;
+  font-size: 32px;
+  color: var(--bgprimary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 1rem 1rem;
+}
+
+.form-input label {
+  padding: 1rem;
+  font-size: 18px;
+  color: var(--bgprimary);
+  font-family: switzerreg
+}
+
+.form-input input {
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid var(--bgprimary);
+}
+
+.sub-btn{
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  border: 2px solid var(--bgsecondary);
+  background-color: var(--bgprimary);
+  color: var(--lightpurple);
+  font-family: hindreg;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sub-btn:hover{
+  border: 2px solid var(--darkpurple);
+  background-color: var(--lightpurple);
+  color: var(--bgprimary);
+}
+
+.regred{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.redlink{
+  text-decoration: none;
+  font-family: hindreg;
+  font-style: italic;
+  color: var(--bgprimary);
+
+}
+
+.redlink span{
+  color: var(--darkpurple);
+  font-family: switzerreg;
+  font-style: normal;
+  padding-left: 0.5rem;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px){
+  .regimg{
+    /* display: none; */
+    
+  }
+
+}

@@ -539,131 +539,13 @@
   text-align: center;
 }
 
-.footer {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 7rem;
-}
-
-.fcard {
-  height: 300px;
-  background-color: var(--bgprimary);
-  border: 2px solid var(--bgsecondary);
-  border-radius: 1rem;
-}
-
-.flogo {
-  display: grid;
-  place-content: center;
-}
-
-.flogo img {
-  margin-top: 100px;
-  border: 3px solid #ececec;
-}
-
-.logotext {
-  padding: 1rem 0;
-  font-family: technorsemi;
-  font-size: 14px;
-  color: var(--lightpurple);
-}
-.logotext span {
-  font-family: technorsemi;
-  font-size: 16px;
-  color: #b9b7ff;
-}
-
-.fmenu {
-  padding-top: 4rem;
-  /* display: flex;
-    flex-wrap: wrap;
-    text-align:center;
-    justify-content: center;
-    align-items: center; */
-}
-
-.fmenuitem {
-  display: flex;
-  list-style: none;
-}
-
-.fmenuitem li {
-  padding-left: 2rem;
-}
-
-.fmenuitem li a {
-  text-decoration: none;
-  font-family: supremereg;
-  font-size: 18px;
-}
-
-.ctitle {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  font-family: technorsemi;
-  font-size: 24px;
-  color: var(--lightpurple);
-}
-
-.contact {
-  padding-right: 1rem;
-  color: #b9b7ff;
-  font-size: 18px;
-  font-family: supremereg;
-}
-
-.mobile img {
-  width: 48px;
-  height: 48px;
-}
-
-.mobile a {
-  text-decoration: none;
-  color: var(--lightpurple);
-}
-
-.email img {
-  width: 48px;
-  height: 48px;
-}
-
-.email a {
-  text-decoration: none;
-  color: var(--lightpurple);
-}
-
-.send-email {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#send-email {
-  width: 60%;
-  margin-top: 50px;
-  padding: 0.75rem 1rem;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: var(--lightpurple);
-}
-
-.sendbtn {
-  /* position: absolute;
-  right: 520px;  */
-  margin-left: 1rem;
-  text-decoration: none;
-  padding: 1rem 1rem;
-  background-color: var(--lightpurple);
-  color: var(--darkpurple);
-  font-family: technorsemi;
-  font-size: 14px;
-  border-radius: 1rem;
+@media screen and (max-width: 320px) {
+  
+  .card-img{
+    width: 200px !important;
+    height: 150px;
+  }
+ 
 }
 
 @media screen and (max-width: 600px) {
@@ -708,13 +590,18 @@
     margin: 0;
   }
 
+
   .fcard {
     height: auto;
   }
 
+
   .fmenuitem {
     display: flex;
     flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
   }
 
   .fmenuitem li {
@@ -722,7 +609,7 @@
   }
 
   .fmenuitem li a {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
   }
 

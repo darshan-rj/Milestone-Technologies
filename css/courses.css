@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Imprima&family=Nova+Round&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Yatra+One&display=swap");
+
+:root {
+  --bgprimary: #27255e;
+  --bgsecondary: #746fff;
+  --darkpurple: #3c3994;
+  --lightpurple: #cbc9fc;
+}
+
+@font-face {
+  font-family: Panchangbold;
+  src: url("../assets/fonts/Panchang-Bold.otf");
+}
+@font-face {
+  font-family: Panchangreg;
+  src: url("../assets/fonts/Panchang-Regular.otf");
+}
+@font-face {
+  font-family: technorsemi;
+  src: url("../assets/fonts/Technor-Semibold.otf");
+}
+@font-face {
+  font-family: supremereg;
+  src: url("../assets/fonts/Supreme-Regular.otf");
+}
+@font-face {
+  font-family: satoshibold;
+  src: url("../assets/fonts/Satoshi-Bold.otf");
+}
+@font-face {
+  font-family: satoshireg;
+  src: url("../assets/fonts/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: khandbold;
+  src: url("../assets/fonts/Khand-Bold.otf");
+}
+@font-face {
+  font-family: hindreg;
+  src: url("../assets/fonts/Hind-Regular.otf");
+}
+@font-face {
+  font-family: switzerreg;
+  src: url("../assets/fonts/Switzer-Regular.otf");
+}
+@font-face {
+  font-family: interbold;
+  src: url("../assets/fonts/Inter-Bold.ttf");
+}
+
+.page{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.title{
+    font-family: technorsemi;
+    color: var(--bgprimary);
+}
+
+.desc{
+    font-family: supremereg;
+    font-size: 20px;
+    color: var(--darkpurple);
+    
+}
+
+hr{
+    border: 2px solid var(--bgprimary);
+}
+
+.pillbtns{
+    margin-top: 4rem;
+}
+
+.pill-list{
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    gap: 2rem;
+}
+
+.pill{
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--bgprimary);
+    border-radius: 2rem;
+    color: var(--darkpurple);
+    font-family: satoshibold;
+}
+
+.pill:hover{
+    border: 2px solid var(--bgsecondary);
+    color: var(--lightpurple);
+    background-color: var(--bgprimary);
+}
+
+.all{
+    margin: 10rem 0;
+}
+.pill-title{
+    font-family: Panchangbold;
+    color: var(--darkpurple);
+    font-size: 24px;
+}
+.content{
+    padding-top: 2rem;
+}
+.abtcour-img{
+    width: auto;
+    height: 400px;
+    border-radius: 2rem;
+}
+
+.sechead{
+    font-family: khandbold;
+    font-size: 20px;
+    color: var(--lightpurple);
+    padding: 1rem 1rem;
+}
+.duration{
+    font-family: hindreg;
+    color: var(--lightpurple);
+    font-size: 32px;
+    font-weight: 600;
+}
+.instr-prof{
+    width: 40px;
+    height: 40px;
+    border-radius: 5rem;
+    border: 2px solid var(--lightpurple);
+}
+.instr{
+    display: flex;
+    flex-direction:row ;
+    justify-content:start;
+    align-items:center;
+     gap:2rem;
+}
+.abt-card{
+    border: none !important;
+    border-radius: 2rem !important;
+}
+
+.abt-card .card-body{
+    background-color: var(--bgprimary) !important;
+    color: var(--lightpurple) !important;
+    border-radius: 2rem !important;
+    margin-bottom: 1rem;
+    padding: 2rem 2rem;
+    text-align:justify;
+    font-family: satoshireg;
+}
+
+.abt-card .card-footer{
+    background-color: var(--darkpurple) !important;
+    color: var(--lightpurple) !important;
+    border-radius: 2rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+}
+
+.learning{
+    margin: 5rem 0 !important;
+}

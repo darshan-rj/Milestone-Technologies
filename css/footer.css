@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Imprima&family=Nova+Round&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Yatra+One&display=swap");
+
+:root {
+  --bgprimary: #27255e;
+  --bgsecondary: #746fff;
+  --darkpurple: #3c3994;
+  --lightpurple: #cbc9fc;
+}
+
+@font-face {
+  font-family: Panchangbold;
+  src: url("../assets/fonts/Panchang-Bold.otf");
+}
+@font-face {
+  font-family: Panchangreg;
+  src: url("../assets/fonts/Panchang-Regular.otf");
+}
+@font-face {
+  font-family: technorsemi;
+  src: url("../assets/fonts/Technor-Semibold.otf");
+}
+@font-face {
+  font-family: supremereg;
+  src: url("../assets/fonts/Supreme-Regular.otf");
+}
+@font-face {
+  font-family: satoshibold;
+  src: url("../assets/fonts/Satoshi-Bold.otf");
+}
+@font-face {
+  font-family: satoshireg;
+  src: url("../assets/fonts/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: khandbold;
+  src: url("../assets/fonts/Khand-Bold.otf");
+}
+@font-face {
+  font-family: hindreg;
+  src: url("../assets/fonts/Hind-Regular.otf");
+}
+@font-face {
+  font-family: switzerreg;
+  src: url("../assets/fonts/Switzer-Regular.otf");
+}
+@font-face {
+  font-family: interbold;
+  src: url("../assets/fonts/Inter-Bold.ttf");
+}
+
+
+
+
+.footer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 7rem;
+}
+
+.fcard {
+  height: 300px;
+  background-color: var(--bgprimary);
+  border: 2px solid var(--bgsecondary);
+  border-radius: 1rem;
+}
+
+.flogo {
+  display: grid;
+  place-content: center;
+}
+
+.flogo img {
+  margin-top: 100px;
+  border: 3px solid #ececec;
+}
+
+.logotext {
+  padding: 1rem 0;
+  font-family: technorsemi;
+  font-size: 14px;
+  color: var(--lightpurple);
+}
+.logotext span {
+  font-family: technorsemi;
+  font-size: 16px;
+  color: #b9b7ff;
+}
+
+.fmenu {
+  padding-top: 4rem;
+  /* display: flex;
+      flex-wrap: wrap;
+      text-align:center;
+      justify-content: center;
+      align-items: center; */
+}
+
+.fmenuitem {
+  display: flex;
+  list-style: none;
+}
+
+.fmenuitem li {
+  padding-left: 2rem;
+}
+
+.fmenuitem li a {
+  text-decoration: none;
+  font-family: supremereg;
+  font-size: 18px;
+}
+
+.ctitle {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-family: technorsemi;
+  font-size: 24px;
+  color: var(--lightpurple);
+}
+
+.contact {
+  padding-right: 1rem;
+  color: #b9b7ff;
+  font-size: 18px;
+  font-family: supremereg;
+}
+
+.mobile img {
+  width: 48px;
+  height: 48px;
+}
+
+.mobile a {
+  text-decoration: none;
+  color: var(--lightpurple);
+}
+
+.email img {
+  width: 48px;
+  height: 48px;
+}
+
+.email a {
+  text-decoration: none;
+  color: var(--lightpurple);
+}
+
+.send-email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#send-email {
+  width: 60%;
+  margin-top: 50px;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--lightpurple);
+}
+
+.sendbtn {
+  /* position: absolute;
+    right: 520px;  */
+  margin-left: 1rem;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  background-color: var(--lightpurple);
+  color: var(--darkpurple);
+  font-family: technorsemi;
+  font-size: 14px;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 320px) {
+  .flogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .flogo img {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    margin: 0;
+  }
+
+  .fcard {
+    height: auto;
+  }
+
+  .fmenuitem {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fmenuitem li {
+    padding: 0 1rem;
+  }
+
+  .fmenuitem li a {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .contact {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .ctitle {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  #send-email {
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .send-email {
+    display: flex;
+    flex-wrap: wrap;
+    justifies-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fcard {
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .flogo img {
+    width: 300px;
+  }
+
+  .logotext {
+    font-size: 20px;
+  }
+  .logotext span {
+    font-size: 24px;
+  }
+
+  .fmenu {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fmenuitem {
+    padding-left: 0;
+  }
+
+  .fmenuitem li a {
+    font-size: 16px;
+    text-align: center;
+  }
+}

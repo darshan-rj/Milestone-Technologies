@@ -43,7 +43,7 @@ header {
   font-weight: 600;
 }
 
-.signupbtn {
+.loginbtn {
   padding: 0.7rem 1.5rem;
   background-color: var(--primaryBlue);
   color: var(--textBlue);
@@ -61,7 +61,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .menu,
-  .signupbtn {
+  .loginbtn {
     display: none;
   }
 
@@ -126,11 +126,11 @@ header {
     text-decoration: none;
     color: white;
   }
-  .signup_mobile {
+  .login_mobile {
     padding-left: 3rem;
   }
 
-  .signupbtn_mobile {
+  .loginbtn_mobile {
     padding: 0.7rem 1.5rem;
     background-color: var(--textBlue);
     color: var(--primaryBlue);
