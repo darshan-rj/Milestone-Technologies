@@ -130,7 +130,13 @@ header {
     padding-left: 3rem;
   }
 
-  .loginbtn_mobile {
+  .signup_mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signupbtn_mobile {
     padding: 0.7rem 1.5rem;
     background-color: var(--textBlue);
     color: var(--primaryBlue);
@@ -139,6 +145,7 @@ header {
     font-weight: 600;
     border-radius: 1rem;
     text-decoration: none;
+    text-align: center;
   }
 }
 
