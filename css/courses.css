@@ -105,6 +105,11 @@ hr {
 }
 .content {
   padding-top: 2rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+
 }
 .abtcour-img {
   width: 100%;
@@ -143,46 +148,189 @@ hr {
   border-radius: 2rem !important;
 }
 
-.abt-card .card-body {
-  background-color: var(--bgprimary) !important;
+.abt-card .abtcard-body {
+  /* background-color: var(--bgprimary) !important; */
+  background-image: url("../assets/Shiny Overlay.svg") !important;
   color: var(--lightpurple) !important;
   border-radius: 2rem !important;
   margin-bottom: 1rem;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   text-align: justify;
   font-family: satoshireg;
 }
+.abtc-content{
+  padding: 1rem 1rem;
+}
 
 
-.abt-card .card-footer {
-  background-color: var(--darkpurple) !important;
-  color: var(--lightpurple) !important;
+.abt-card .abtcard-footer {
+  /* background-color: var(--darkpurple) !important; */
+  background-image: url("../assets/Simple Shiny.svg");
+  background-size: cover;
+  color: var(--darkpurple) !important;
   border-radius: 2rem !important;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem 2rem;
   text-align: center;
+  flex-wrap: wrap;
+  align-content:center;
+}
+
+.course-instr, .sechead, .duration{
+  color: var(--darkpurple) !important;
+
 }
 
 .learning {
   margin: 5rem 0 !important;
 }
 
+.lcard-container{
+  margin:3rem 0 !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .lcard{
+  width: 300px !important;
+  height: 250px;
+  border: 2px solid var(--darkpurple);
+  border-radius: 1rem;
+  /* background-color: var(--lightpurple); */
+  background-image: url("../assets/Simple Shiny.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 2rem;
+}
+
+.outcome{
+  font-family: technorsemi;
+  font-size: 20px;
+  color: var(--bgprimary);
+}
+
+.detail{
+  font-family: supremereg;
+  font-size: 16px;
+  color: var(--darkpurple);
+}
+
+.lab{
+  /* background-color: var(--bgprimary); */
+  background-image: url("../assets/Shiny Overlay.svg");
+  background-size: cover;
+  border-radius: 2rem;
+}
+
+.labheading{
+  color: var(--lightpurple);
+  padding:2rem 2rem !important;
+}
+
+
+.lab-container{
+  margin: 2rem 0 !important;
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* iframe{
+  border-radius: 2rem;
+  width: 560px;
+  height: 350px;
+} */
+
+video{
+  border-radius: 2rem;
   width: 100%;
-  height: 
+  height: 100%;
+}
+
+.labtitle{
+  font-family: technorsemi;
+  color: var(--lightpurple);
+  font-size: 24px;
+}
+
+.labdetails{
+  font-family: supremereg;
+  color: var(--bgsecondary)
+}
+
+.enroll{
+  margin: 5rem 0 !important;
+  border: 2px solid var(--darkpurple);
+  border-radius: 2rem;
+  /* background-color: var(--lightpurple); */
+  background-image: url("../assets/Simple Shiny.svg");
+  background-size: cover;
+  padding: 2rem 2rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.pill-title span{
+  font-family: technorsemi;
+  text-decoration: underline;
+  padding-left: 1rem;
+}
+
+.ecard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.ecard-details{
+  font-family: supremereg;
+  color: var(--darkpurple);
+  padding: 2rem 2rem;
+}
+
+.enrollbtn{
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border: 2px solid var(--bgsecondary);
+  background-color: var(--bgprimary);
+  border-radius: 1rem;
+  font-family: Panchangbold;
+  color: var(--lightpurple);
+}
+
+.enrollbtn:hover{
+  border: 2px solid var(--darkpurple);
+  background-color: var(--bgsecondary);
+  color: var(--bgprimary);
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    gap: 1rem !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    gap: 1rem !important;
   }
 
   .abtcour-img {
@@ -195,10 +343,19 @@ hr {
     text-align: center;
   }
 
-  .abt-card .card-footer {
+  .abt-card .abtcard-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 1rem 2rem;
   }
+/* 
+  iframe{
+    border-radius: 1rem;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 1rem;
+    
+  } */
 }

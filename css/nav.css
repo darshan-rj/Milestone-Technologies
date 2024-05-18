@@ -7,8 +7,56 @@
   --lightBlue: #908cff;
   --lighterBlue: #b2afff;
   --textBlue: #cfceff;
+  --bgprimary: #27255e;
+  --bgsecondary: #746fff;
+  --darkpurple: #3c3994;
+  --lightpurple: #cbc9fc;
 }
 
+@font-face {
+  font-family: Panchangbold;
+  src: url("../assets/fonts/Panchang-Bold.otf");
+}
+@font-face {
+  font-family: Panchangreg;
+  src: url("../assets/fonts/Panchang-Regular.otf");
+}
+@font-face {
+  font-family: technorsemi;
+  src: url("../assets/fonts/Technor-Semibold.otf");
+}
+@font-face {
+  font-family: supremereg;
+  src: url("../assets/fonts/Supreme-Regular.otf");
+}
+@font-face {
+  font-family: satoshibold;
+  src: url("../assets/fonts/Satoshi-Bold.otf");
+}
+@font-face {
+  font-family: satoshireg;
+  src: url("../assets/fonts/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: khandbold;
+  src: url("../assets/fonts/Khand-Bold.otf");
+}
+@font-face {
+  font-family: hindreg;
+  src: url("../assets/fonts/Hind-Regular.otf");
+}
+@font-face {
+  font-family: switzerreg;
+  src: url("../assets/fonts/Switzer-Regular.otf");
+}
+@font-face {
+  font-family: interbold;
+  src: url("../assets/fonts/Inter-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
 header {
   margin: 1rem;
   display: flex;
@@ -38,20 +86,38 @@ header {
 .menuitem li a {
   text-decoration: none;
   color: var(--primaryBlue);
-  font-size: 16px;
-  font-family: Quicksand;
+  font-size: 18px;
+  font-family: satoshibold;
   font-weight: 600;
+}
+.menuitem li a:hover {
+  text-decoration: underline wavy var(--bgsecondary);
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--primaryBlue);
+  font-family: khandbold;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 1rem;
+  gap: 0.5rem;
+}
+.login svg{
+  fill: var(--lightBlue);
+  width: 24px;
 }
 
 .loginbtn {
-  padding: 0.7rem 1.5rem;
-  background-color: var(--primaryBlue);
-  color: var(--textBlue);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 1rem;
   text-decoration: none;
+  color: var(--lightpurple);
+
 }
 
 .ham,
@@ -60,14 +126,17 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .menu,
+  .menu,.login,
   .loginbtn {
     display: none;
   }
 
   .ham,
   .menuitem_mobile {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 
   .ham {
@@ -87,9 +156,21 @@ header {
     color: var(--lightBlue);
   }
 
+  .ham {
+    padding: 0.5rem 1rem;
+    background-color: var(--darkpurple);
+    font-family: technorsemi;
+    font-size: 16px;
+    color: var(--lightpurple);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
   button svg {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
   }
 
   .menu_mobile {
@@ -111,52 +192,88 @@ header {
     }
   }
 
-  .menuitem_mobile {
-    list-style-type: none;
-    margin-top: 7rem;
-    margin-left: 2rem;
-  }
-
-  .menuitem_mobile li {
-    padding: 0.5em 0;
-  }
-
-  .menuitem_mobile li a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: white;
-  }
-  .login_mobile {
-    padding-left: 3rem;
-  }
-
-  .signup_mobile{
+  .mobile_menu {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
+  .menuitem_mobile {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+  }
 
-  .signupbtn_mobile {
-    padding: 0.7rem 1.5rem;
+  .menuitem_mobile li {
+    margin: 0.5rem 0;
+    width: 100%;
+    background-color: rgba(74, 70, 179, 0.5);
+    width: 250px;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .menuitem_mobile li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--lightpurple);
+    font-family: satoshibold;
+  }
+
+  .menuitem_mobile li:hover {
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--bgsecondary);
+  }
+
+  .login_mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
     background-color: var(--textBlue);
     color: var(--primaryBlue);
-    font-family: Poppins;
-    font-size: 14px;
+    font-family: khandbold;
+    font-size: 24px;
     font-weight: 600;
     border-radius: 1rem;
     text-decoration: none;
     text-align: center;
   }
+
+  .login_mobile svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .loginbtn_mobile {
+    text-decoration: none;
+    color: var(--darkpurple);
+    padding: 0.75rem 0.5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .menu_mobile {
-    width:80%;
+    width: 100%;
   }
 
-  .close {
+  .menu_mobile .close {
     margin-top: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--darkpurple);
+    border: 2px solid var(--bgsecondary);
+    border-radius: 1rem;
+    color: var(--lightpurple);
+    font-family: technorsemi;
   }
 }
-
-

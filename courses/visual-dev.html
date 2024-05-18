@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone Technologies</title>
+
+    <!-- CSS links-->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/courses.css">
+
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Links -->
+</head>
+
+
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="../assets/Logo.svg" alt="">
+        </div>
+        <nav class="menu">
+            <ul class="menuitem">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#courses">Courses</a></li>
+                <li><a href="../index.html#instructors">Instructors</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#3c3994">
+                <path
+                    d="M4 15H6V20H18V4H6V9H4V3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V15ZM10 11V8L15 12L10 16V13H2V11H10Z">
+                </path>
+            </svg>
+            <a href="../login.html" class="loginbtn">Login</a>
+        </div>
+
+        <button class="ham" popovertarget="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+            </svg>
+            Menu
+        </button>
+        <nav class="menu_mobile" popover role="menu" id="menu">
+            <button class="close" popovertarget="menu" popovertargetaction="hide">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                    </path>
+                </svg>
+                close
+            </button>
+
+            <div class="mobile_menu">
+                <ul class="menuitem_mobile">
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#courses">Courses</a></li>
+                    <li><a href="../index.html#instructors">Instructors</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="login_mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#3c3994">
+                        <path
+                            d="M4 15H6V20H18V4H6V9H4V3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V15ZM10 11V8L15 12L10 16V13H2V11H10Z">
+                        </path>
+                    </svg>
+                    <a href="../login.html" class="loginbtn_mobile">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+
+    <main>
+        <section class="page container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h1 class="title">Visual Development Tools</h1>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p class="desc">Maya, Blender, Animate CC, Aftereffects, Adobe Premier, Sound Forge</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="pillbtns container">
+            <ul class="pill-list">
+                <li><a href="#abt-course" class="pill">All</a></li>
+                <li><a href="#abt-course" class="pill">About Course</a></li>
+                <li><a href="#learning" class="pill">What you'll learn?</a></li>
+                <li><a href="#lab" class="pill">Visual Development Lab</a></li>
+                <li><a href="#enroll" class="pill">Enrollment</a></li>
+            </ul>
+        </section>
+
+        <section id="all" class="all container">
+            <section id="abt-course" class="abt-course container">
+                <div class="row">
+                    <h5 class="pill-title">About Course</h5>
+                </div>
+                <div class="row content">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img src="../assets/images/courses/visualdev.png" alt="" class="abtcour-img">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="abt-card">
+                            <div class="abtcard-body">
+                                <p class="abtc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                    repellendus hic pariatur ipsa illum quidem quos optio sed illo corrupti ipsum quas
+                                    modi cupiditate itaque, nihil tempore, dolor rerum tenetur. <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                    repellendus hic pariatur ipsa illum quidem quos optio sed illo corrupti ipsum quas
+                                    modi cupiditate itaque, nihil tempore, dolor rerum tenetur.
+                                </p>
+                            </div>
+                            <div class="abtcard-footer">
+                                <div class="course-instr">
+                                    <h6 class="sechead">Instructors</h6>
+                                    <ul class="instr-list">
+                                        <li class="instr">
+                                            <img class="instr-prof" src="../assets/images/instructors/sampleimg1.png"
+                                                alt="">
+                                            <h6 class="instr-name">Instructor 1</h6>
+                                        </li>
+                                        <li class="instr">
+                                            <img class="instr-prof" src="../assets/images/instructors/sampleimg2.png"
+                                                alt="">
+                                            <h6 class="instr-name">Instructor 1</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="course-duration">
+                                    <div class="row">
+                                        <h4 class="sechead">Course Duration</h4>
+                                    </div>
+                                    <div class="row">
+                                        <h5 class="duration">4 weeks</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learning" class="learning container">
+                <div class="row">
+                    <h5 class="pill-title">Learning Outcomes</h5>
+                </div>
+
+                <div class="row lcard-container">
+                    <div class="lcard">
+                        <h5 class="outcome">Outcome 1</h5>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit in
+                            repellat neque consequatur laborum delectus sequi ab possimus voluptates, error iste
+                            ipsam doloremque rerum et iusto mollitia aspernatur! Sit!</p>
+                    </div>
+
+                    <div class="lcard">
+                        <h5 class="outcome">Outcome 2</h5>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit in
+                            repellat neque consequatur laborum delectus sequi ab possimus voluptates, error iste
+                            ipsam doloremque rerum et iusto mollitia aspernatur! Sit!</p>
+                    </div>
+
+                    <div class="lcard">
+                        <h5 class="outcome">Outcome 3</h5>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit in
+                            repellat neque consequatur laborum delectus sequi ab possimus voluptates, error iste
+                            ipsam doloremque rerum et iusto mollitia aspernatur! Sit!</p>
+                    </div>
+
+                    <div class="lcard">
+                        <h5 class="outcome">Outcome 4</h5>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit in
+                            repellat neque consequatur laborum delectus sequi ab possimus voluptates, error iste
+                            ipsam doloremque rerum et iusto mollitia aspernatur! Sit!</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="lab" class="lab container">
+                <div class="row">
+                    <h5 class="pill-title labheading">Virtual Lab</h5>
+                </div>
+
+                <div class="row lab-container">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <!-- <iframe
+                            src="https://www.youtube.com/embed/ifo76VyrBYo?si=ygW6midIc0TnYDsw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                        <video autoplay muted controls>
+                            <source src="../assets/videos/Introduction to Programming.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h4 class="labtitle">Visual Development Lab</h4>
+                        <p class="labdetails">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi
+                            iusto,
+                            itaque recusandae, architecto dolor, magnam suscipit porro doloribus laborum quod. Ratione,
+                            illum optio nesciunt sequi similique vitae perferendis magni?</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="enroll" class="enroll container">
+                <div class="row">
+                    <h2 class="pill-title">Enrollment Date: <span>20th May 2024</span></h2>
+                </div>
+
+                <div class="row">
+                    <div class="ecard">
+                        <p class="ecard-details">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tenetur laboriosam fuga
+                            neque repellendus consectetur quibusdam, perferendis facere nesciunt ullam sequi ex omnis
+                            sed beatae officia amet autem deleniti nam?
+                        </p>
+                        <a href="" class="enrollbtn">Enroll</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section id="footer" class="footer container-fluid">
+            <div class="fcard">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="flogo">
+                            <img src="../assets/logo.png" alt="">
+                            <p class="logotext"><span>Location :</span> Madurai, Tamil Nadu </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="send-mail">
+                                <input type="text" name="send-email" id="send-email" placeholder="Your message">
+                                <a class="sendbtn">Send Message</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="fmenu">
+                                <ul class="fmenuitem">
+                                    <li><a href="#" style="color: #CBC9FC" ;>Home</a></li>
+                                    <li><a href="#about" style="color: #CBC9FC" ;>About</a></li>
+                                    <li><a href="#courses" style="color: #CBC9FC" ;>Courses</a></li>
+                                    <li><a href="#instructors" style="color: #CBC9FC" ;>Instructors</a></li>
+                                    <li><a href="#contact" style="color: #CBC9FC" ;>Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 col-sm-12" id="contact">
+                        <div class="row">
+                            <h2 class="ctitle">Contact Us</h2>
+                        </div>
+
+                        <div class="contact">
+                            <div class="row">
+                                <p class="cname">Dr S M Nabi <br><span>(B.Sc., B.Tech, M.E, PhD - IIT Madras)</span>
+                                    <br> DIRECTOR
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="mobile">
+                                    <img src="../assets/icons/dialer.png" alt="">
+                                    <a href="tel:+919600079490">+91-9600079490</a>
+                                </div>
+                                <div class="email">
+                                    <img src="../assets/icons/email.png" alt="">
+                                    <a href="mailto:dr.nabi@mstonetech.in">dr.nabi@mstonetech.in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/accordion.js"></script>
+</body>
+
+</html>

@@ -48,15 +48,14 @@
   src: url("../assets/fonts/Inter-Bold.ttf");
 }
 
-
-
 .hero {
   display: grid;
   width: 100%;
   height: auto;
   margin-top: 2rem;
   padding: 2rem 5rem;
-  background: var(--bgprimary);
+  /* background: var(--bgprimary); */
+  background-image: url("../assets/Shiny Overlay.svg");
   border: 2px solid var(--bgsecondary);
   border-radius: 15px;
   box-shadow: 5px 5px 10px 5px rgba(116, 111, 255, 0.46);
@@ -313,7 +312,8 @@
 
 .courses {
   height: auto;
-  background-color: var(--bgprimary);
+  /* background-color: var(--bgprimary); */
+  background-image: url("../assets/Shiny Overlay.svg");
   border: 2px solid var(--bgsecondary);
   border-radius: 15px;
   padding-top: 2rem;
@@ -407,6 +407,8 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 /* 
 .icontainer {
@@ -586,10 +588,10 @@
     text-align: justify;
   }
 
+
   .footer {
     margin: 0;
   }
-
 
   .fcard {
     height: auto;
