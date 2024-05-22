@@ -170,7 +170,7 @@
 
 .accordion .container {
   position: relative;
-  margin: 10px 10px;
+  margin: 10px 0px;
 }
 
 /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
@@ -551,6 +551,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .hero-img{
+    padding-top: 2rem;
+  }
   .abt-content {
     padding: 0;
   }

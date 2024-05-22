@@ -1,8 +1,5 @@
-function toggle() {
-  var x = document.getElementById("menubar_list");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+var menu = document.querySelector('#menu');
+
+function closeMenu() {
+    menu.style.display = 'none';
 }
