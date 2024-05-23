@@ -50,6 +50,7 @@
 
 .logscr{
   /* margin-top: 2rem; */
+
 }
 
 .logscr .regimg {
@@ -140,8 +141,13 @@
 
 @media screen and (max-width: 768px){
   .regimg{
-    /* display: none; */
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .regimg{
+    display: none;
     
   }
-
 }

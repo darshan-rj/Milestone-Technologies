@@ -48,6 +48,10 @@
   src: url("../assets/fonts/Inter-Bold.ttf");
 }
 
+body{
+  background-color: # !important;
+}
+
 .hero {
   display: grid;
   width: 100%;
